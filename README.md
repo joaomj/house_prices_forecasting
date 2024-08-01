@@ -1,4 +1,4 @@
-# House Prices Forecastin
+# House Prices Forecasting
 A house prices forecasting project with Tokyo data.
 
 
