@@ -2,6 +2,7 @@
 A house prices forecasting project with Tokyo data.
 
 # Overview
+Using the provided dataset, build a machine learning model for predicting house prices.
 
 # Dataset Description
 The dataset contains information on real estate transactions in Tokyo from 2005 to 2019, with dozens of columns:
