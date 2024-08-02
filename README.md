@@ -49,10 +49,38 @@ The dataset contains information on real estate transactions in Tokyo from 2005 
 
 *SRC = Steel frame reinforced concrete, RC = Reinforced concrete, S = Steel frame, LS = Light steel structure, B = Concrete block, W = Wooden
 
-
 # Installation
 
-# Usage
+To get started with the House Prices Forecasting project, follow these steps to set up the environment and install the required dependencies.
+
+## Prerequisites
+
+- [Miniconda](https://docs.conda.io/en/latest/miniconda.html) installed on your system. I used WSL to emulate a Linux SO on Windows.
+
+## Setup Instructions
+
+1. **Clone the Repository**
+
+   First, clone the project repository from GitHub:
+
+   ```bash
+   git clone https://github.com/joaomj/house_prices_forecasting.git
+   cd house_prices_forecasting
+
+2. **Create and Activate the Conda Environment**
+
+    Use the provided environment.yml file to create a Conda environment with all necessary dependencies:
+
+    ```bash
+    conda env create -f environment.yml
+    conda activate house_prices_forecasting
+
+3. **Run the project**
+
+    You can now run the project's Jupyter notebooks or Python scripts. For Jupyter notebooks, start the Jupyter server with:
+
+    ```bash
+    jupyter notebook
 
 # Preprocessing and Feature Engineering
 The dataset presented a series of data issues, making the cleaning and preprocessing stage the longest and most complex part of the project. I'll comment on the main challenges encountered:
@@ -136,12 +164,15 @@ The chosen performance metrics were MAPE (Mean Absolute Percentage Error), RMSLE
 
 Note that despite the extensive time required to optimize the XGBoost model, the performance gains were minimal.
 
-
-# Discussion
-
 # Conclusion
 
+In this house prices forecasting project using Tokyo data, extensive preprocessing and feature engineering were necessary to address issues such as missing values, outliers, and columns with low variance. The exploratory analysis revealed key insights about the data distribution, property characteristics, and correlations with price. Linear Regression and XGBoost models were evaluated, with XGBoost demonstrating superior performance. Despite the optimization process being time-consuming, the improvement in performance metrics was minimal. Overall, XGBoost proved to be the most effective model for predicting house prices, highlighting its robustness for tabular data in supervised learning tasks.
+
 # Future Work
+
+1. **Productization:** To make this project accessible to other users, i plan to deploy it as a product. This can be achieved by creating an API or a web interface using tools like Streamlit. This would allow users to interact with the model and make predictions easily through a user-friendly platform.
+
+2. **Model Expansion:** Explore additional machine learning models to potentially improve performance further. Testing models such as Random Forests and Decision Trees could provide new insights and possibly enhance prediction accuracy compared to the currently used models.
 
 # References
 - [Handling missing values in dataset — 9 methods that you need to know](https://web.archive.org/web/20240801035444/https://medium.com/@pingsubhak/handling-missing-values-in-dataset-7-methods-that-you-need-to-know-5067d4e32b62)
